@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/p2sub/p2sub/leveldb"
+	"github.com/p2sub/p2sub/lvldb"
 )
 
 func main() {
-	manager, err := leveldb.New("./db", nil)
-	addItem := leveldb.Item {
+	manager, err := lvldb.New("./db", nil)
+	addItem := lvldb.Item {
 		Key: []byte("Item-1"),
 		Value: []byte("Value-1"),
 	}
